@@ -5,7 +5,7 @@ import path from "path";
 
 import notesRoutes from "../src/routes/notesRoute.js"
 import { connectDB } from "./config/db.js";
-import rateLimiter from "./middleware/rateLimiter.js";
+// import rateLimiter from "./middleware/rateLimiter.js";
 
 //const express = require("express");
 
@@ -27,7 +27,7 @@ app.use(cors({
 }
 
 app.use(express.json()); //This middleware will parse JSON bodies: req.body
-app.use(rateLimiter);
+//app.use(rateLimiter);
 // our simple custom middleware
 //app.use((req, res, next)=> {
 //    console.log(`Req methos is ${req.method} & Req URL is ${req.url}`);
